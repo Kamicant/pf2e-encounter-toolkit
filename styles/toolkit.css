@@ -1,0 +1,47 @@
+#pet-launcher {
+  position: fixed; bottom: 12px; right: 300px; z-index: 75;
+  color: #f2e7c5; background: #29213c; border: 1px solid #ae8fd0;
+  border-radius: 7px; padding: 8px 12px; min-width: 136px;
+  font: 600 13px/1.3 sans-serif; box-shadow: 0 2px 15px #0009;
+  cursor: pointer;
+}
+#pet-launcher:hover { background: #44345e; }
+.pet-form {display: flex; flex-direction: column; gap: 10px; padding: 5px; max-height: 58vh; overflow: auto;}
+.pet-form p { margin: 0 0 5px; opacity: .8; font-size: 12px; }
+.pet-form label {display: flex; flex-direction: column; gap: 4px; font-weight: 600;}
+.pet-form label.pet-check { flex-direction: row; align-items: center; }
+.pet-form input, .pet-form textarea, .pet-form select {max-width: 100%; padding: 5px; font-weight: 400;}
+.pet-form input[type=checkbox]{ width: 18px; height:18px; }
+.pet-announcement {
+  position: fixed; z-index: 10000; left: 50%; top: 15%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 14px; max-width: min(670px, 85vw);
+  color: #fff7d8; background: linear-gradient(120deg, #251827ed, #47314ded);
+  border: 2px solid #d4ab67; box-shadow: 0 0 30px #000d; border-radius: 10px;
+  padding: 16px 22px; pointer-events:none;
+  animation: petIn .35s ease-out;
+}
+.pet-announcement img {max-width: 85px; max-height: 95px; object-fit: contain; border-radius: 4px; }
+.pet-announcement strong {font-size: 20px; color:#ffda87; font-family:serif;}
+.pet-announcement p {font-size: 15px; margin:4px 0 0; white-space:pre-wrap;}
+@keyframes petIn {from {opacity:0;top:12%} to {opacity:1;top:15%}}
+.pet-objective-tracker {
+  position:fixed; top:86px; left:85px; width:260px; max-height:42vh; overflow:auto;
+  z-index:55; color:#eee0bf; background:#161720db; border:1px solid #b69262;
+  border-radius:8px; padding:12px; box-shadow:0 3px 12px #0009; pointer-events:none;
+  font-size:12px;
+}
+.pet-objective-tracker>strong {letter-spacing:.08em; font-size:12px;}
+.pet-goal {margin-top:10px;border-top:1px solid #aaa5;padding-top:7px;}
+.pet-goal progress {width:100%;height:10px;accent-color:#6bba8c;}
+.pet-goal small {display:block;opacity:.76;}
+.pet-completed {color:#b4edb5;} .pet-failed {color:#ed9a9a;}
+.pet-chat strong{font-size:1.1em;} .pet-chat div{margin-top:5px;}
+.pet-boss-tracker {
+  position:fixed; top:86px; right:320px; width:230px; max-height:40vh; overflow:auto;
+  z-index:54;color:#e7d8c1;background:#1a151ce8;border:1px solid #bc6b6b;
+  padding:11px;border-radius:8px;pointer-events:none;font-size:12px;
+}
+.pet-boss-tracker>strong{font-size:12px;letter-spacing:.07em;}
+.pet-boss-title{margin-top:8px;font-weight:600;}
+.pet-break-progress{width:100%;height:10px;accent-color:#e19e57;}
+.pet-weakpoint{margin:3px 0 0 6px;opacity:.9;}
