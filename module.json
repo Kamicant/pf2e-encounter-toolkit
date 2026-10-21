@@ -1,0 +1,30 @@
+{
+  "id": "pf2e-encounter-toolkit",
+  "title": "PF2e Encounter Toolkit (Community Prototype)",
+  "description": "Ten opt-in GM encounter aids: telegraphs, phases, expanding zones, weak points, squads, break gauges, announcements, interactive scene requests, morale cues and objectives. GM-controlled; no automatic PF2e damage.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Community prototype"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system"
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/toolkit.css"
+  ],
+  "type": "module",
+  "socket": true
+}
